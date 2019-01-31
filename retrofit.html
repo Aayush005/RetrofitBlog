@@ -1,38 +1,12 @@
 <!DOCTYPE html>
 <html lang=en>
-<head>
-
-</head>
-<body class="mt-3 pt-xl-5 pt-lg-5 pt-md-5 pt-sm-5 pt-4">
-
-<!--Main Layout-->
-<main>
 
 
-<!--Grid row-->
-<div class="row">
+<img class="card-img-top" src="C:\Users\dell\Desktop\mitchtabian\database\UntitledDiagram.jpg" alt="Card image cap">
 
-	<!-- Grid Column-->
-    <div class="col-md-8 col-sm-12 col-12 mb-4">
+<p><p>Table of Contents:</p>
 
-    	<div class="card">
-            <div class="card-header font-weight-bold">
-                <h2><a><strong>Retrofit </strong></a></h2>
-                <h6 class="grey-text">written Jan. 29, 2019</h6>
-            </div>
-    	<div class="card-body">
-
-        
             
-            <img class="card-img-top" src="C:\Users\dell\Desktop\mitchtabian\database\UntitledDiagram.JPEG.jpg" alt="Card image cap">
-            
-        
-        
-
-        <!--Excerpt-->
-        <div class="excerpt mt-5">
-            <p><p>Table of Contents:</p>
-<ul>
 <li><a href='#introduction'>Introduction</a></li>
 <li><a href='#what-is-retrofit'>What is Retrofit?</a></li>
 
@@ -43,12 +17,12 @@ An Example:
 
 <li><a href='#dependencies'>Dependencies</a></li>
 <li><a href='#permissions'>Permissions</a></li>
-<li><a href='#Jsondata'>Json data</a></li>
+<li><a href='#Jsondata'>JSON data</a></li>
 <li><a href='#model'>Model</a></li>
 <li><a href='#RetrofitInstance'>Retrofit Instance</a></li>
 <li><a href='#endpoints'>Define the Endpoints</a></li>
 <li><a href='#RecyclerviewAdapter'>Recyclerview Adapter</a></li>
-<li><a href='#Layoutmanager'>Initialising the Recyclerview</a></li>
+<li><a href='#Layoutmanager'>Initializing the Recyclerview</a></li>
 
 </ol>
 <li><a href='#final-thoughts'>Final Thoughts</a></li>
@@ -58,7 +32,7 @@ An Example:
 
 <h3 id='introduction'>Introduction</h3>
 <br>
-In this blog I'm gonna show you how to work with retrofit in android.<br><br><br>
+In this blog I'm gonna show you how to work with the retrofit in android.<br><br><br>
 
 
 <h3 id='what-is-retrofit'>What is Retrofit?</h3>
@@ -70,11 +44,11 @@ Using Retrofit we can easily translate the REST APIs to Java Interfaces. Retrofi
 
 <h3 id='dependencies'>Dependencies</h3>
 <br>
-Open build.gradle (Module:app) and add Retrofit, Gson, RecyclerView and CardView dependencies.
+Open build.gradle (Module:app) and add Retrofit, GSON, RecyclerView and CardView dependencies.
 <br><br>
 <script src="https://gist.github.com/Aayush005/39d48cefd1d967651f68952720a5e0b5.js"></script>
 <br>
-Make sure you have the latest dependencies. You can check them <a href="https://square.github.io/retrofit/">here</a>
+Make sure you have the latest dependencies. You can check them <a href="https://square.github.io/retrofit/" target="_blank" rel="nofollow">here</a>
 <br><br><br>
 
 
@@ -85,9 +59,9 @@ Add the internet permission in your AndroidManifest.xml<br><br>
 <br><br><br>
 
 
-<h3 id='Jsondata'>Json data</h3>
+<h3 id='Jsondata'>JSON data</h3>
 <br>
-Now we will use sample JSON data from <a href="https://jsonplaceholder.typicode.com/posts">https://jsonplaceholder.typicode.com/posts</a><br><br> which looks like this<br><br>
+Now we will use sample JSON data from <a href="https://jsonplaceholder.typicode.com/posts" target="_blank" rel="nofollow">https://jsonplaceholder.typicode.com/posts</a><br><br> which looks like this<br><br>
 <script src="https://gist.github.com/Aayush005/d4aec148f9e6eabb8f9baecc6ef927f6.js"></script>
 <br><br><br>
 
@@ -98,7 +72,7 @@ Make a model class Posts.java and put the following code inside it.<br><br>
 <script src="https://gist.github.com/Aayush005/8a7a60097c4761efeec06064584f2e80.js"></script>
 
 <br><br>
-Posts class has fields that represent the post title and body of a post. These fields are annotated with the @SerializedName annotation. The parameter (value) of this annotation is the name to be used when serialising and deserialising objects. For example, the Java field title is represented as name in JSON.
+Posts class has fields that represent the post title and body of a post. These fields are annotated with the @SerializedName annotation. The parameter (value) of this annotation is the name to be used when serializing and deserializing objects. For example, the Java field title is represented as a name in JSON. 
 <br><br>
 Later we've set getter and setter for all the variables.
 <br><br><br>
@@ -132,7 +106,7 @@ Now we will create the Adapter class for our recyclerview. Create a class Recycl
 <br><br><br>
 
 
-<h3 id='Layoutmanager'>Initialising the Recyclerview</h3>
+<h3 id='Layoutmanager'>Initializing the Recyclerview</h3>
 <br>
 
 Finally, we will initialize the Endpoints interface and  the Recyclerview in the MainActivity.<br><br>
@@ -143,23 +117,19 @@ That's All! Happy Coding!
 <br><br><br>
 
 
-The complete code is available <a href="https://github.com/Aayush005/RetrofitMitchTabian" target="_blank">here</a>.
+The complete code is available <a href="https://github.com/Aayush005/RetrofitMitchTabian" target="_blank" rel="nofollow">here</a>.
 <br><br><br>
 
 
 
 <h3 id='final-thoughts'>Final Thoughts</h3>
 <br>
-One of the most important aspect about retrofit is the hassle free setup provided by retrofit to integrate different converters used for data serialisation. You can add gson converters, xml converters or even custom converters.
+One of the most important aspects of retrofit is the hassle-free setup provided by retrofit to integrate different converters used for data serialization. You can add GSON converters, XML converters or even custom converters. 
 <br><br>
 <strong>Need some extra help?</strong>.
 <br>
-Check out the videos on my youtube channel <a href="https://www.youtube.com/channel/UCoNZZLhPuuRteu02rh7bzsw" target="_blank">here</a>.
+Check out the videos on my youtube channel <a href="https://www.youtube.com/channel/UCoNZZLhPuuRteu02rh7bzsw" target="_blank" rel="nofollow">here</a>.
 <br><br><br>
 
 
-
-
-
-</body>
 </html>
